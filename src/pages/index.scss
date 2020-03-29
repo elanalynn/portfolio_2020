@@ -1,0 +1,41 @@
+@import "../styles/variables";
+
+p {
+  font-size: 1.25rem;
+
+  &.intro {
+    max-width: 16rem;
+  }
+}
+
+.post-index {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  input {
+    line-height: 2rem;
+  }
+
+  button {
+    background-color: $primary;
+    color: $light;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    min-width: 10rem;
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+}

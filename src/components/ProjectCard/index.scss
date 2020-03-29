@@ -1,0 +1,28 @@
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.project-card {
+  padding: 0;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+  width: 100%;
+  max-width: 60rem;
+  height: 15rem;
+  border: 1px solid gray;
+  display: flex;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+
+  .text {
+    font-size: 1.25rem;
+    padding: 0.25rem 0.75rem;
+  }
+}

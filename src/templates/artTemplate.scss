@@ -1,0 +1,24 @@
+.art-detail {
+  display: flex;
+  margin-top: 6rem;
+
+  .art-data {
+    width: 22rem;
+    margin-right: 4rem;
+  }
+
+  label {
+    margin: 1rem 0.5rem 0.5rem 0;
+    padding: 0.25rem 0.5rem;
+    background-color: lightgray;
+
+    &.monster {
+      background-color: coral;
+    }
+  }
+
+  img {
+    width: auto;
+    max-height: 36rem;
+  }
+}
