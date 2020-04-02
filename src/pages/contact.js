@@ -31,6 +31,7 @@ const contact = () => (
     <form
       class="contact"
       name="contact-form-elanalynn"
+      form-name="contact-form-elanalynn"
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
