@@ -28,7 +28,13 @@ const contact = () => (
         />
       </a>
     </div>
-    <form class="contact" name="contact" method="POST" data-netlify="true">
+    <form
+      class="contact"
+      name="contact-form-elanalynn"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
       <label>
         Name
         <input type="text" name="name" />
