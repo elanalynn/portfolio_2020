@@ -29,7 +29,7 @@ const contact = () => (
       </a>
     </div>
     <form
-      class="contact"
+      className="contact"
       name="contact-form-elanalynn"
       method="POST"
       enctype="multipart/form-data"

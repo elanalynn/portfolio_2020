@@ -19,12 +19,23 @@ p {
 }
 
 .background-image {
-  height: 100vh;
-  background: url("../../assets/cow.png");
-  -webkit-background-size: 100% cover;
-  -moz-background-size: 100% cover;
-  -o-background-size: 100% cover;
-  background-size: cover;
+  &.cow-background {
+    background: url("../../assets/cow.png") no-repeat;
+    -webkit-background-size: 100% cover;
+    -moz-background-size: 100% cover;
+    -o-background-size: 100% cover;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  &.pigeon-background {
+    background: url("../../assets/pigeon.png") no-repeat;
+    -webkit-background-size: 100% cover;
+    -moz-background-size: 100% cover;
+    -o-background-size: 100% cover;
+    background-size: cover;
+    height: 100vh;
+  }
 }
 
 main {
