@@ -34,13 +34,12 @@ const connect = ({ path }) => (
     </div>
     <form
       className="contact"
-      name="contact-form-elanalynn"
+      name="Contact"
       method="POST"
-      action="/"
-      encType="multipart/form-data"
       data-netlify="true"
-      netlify-honeypot="bot-field"
+      data-netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="form-name" value="Contact" />
       <label>
         Name
         <input type="text" name="name" />
