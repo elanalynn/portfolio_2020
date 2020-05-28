@@ -5,14 +5,14 @@ import { Layout } from "../components/Layout/Layout"
 
 import "./artTemplate.scss"
 
-export default function ArtTemplate({ data }) {
+export default function ArtTemplate({ data, path }) {
   const { markdownRemark } = data
   const {
     frontmatter: { date, description, image, medium, tags, title },
   } = markdownRemark
 
   return (
-    <Layout pageTitle={title}>
+    <Layout pageTitle={title} path={path}>
       <div className="art-detail">
         <div className="art-data">
           <h1>{title}</h1>

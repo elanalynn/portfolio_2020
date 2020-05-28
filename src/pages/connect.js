@@ -1,38 +1,43 @@
 import React from "react"
 
+import { ExternalLink } from "../components/ExternalLink/ExternalLink"
 import { Layout } from "../components/Layout/Layout"
 
-const contact = () => (
-  <Layout pageTitle="Contact">
-    <h1>Contact</h1>
+const connect = ({ path }) => (
+  <Layout pageTitle="Connect" path={path}>
+    <h1>Connect</h1>
     <div className="social-icons">
-      <a href="https://github.com/elanalynn" target="_blank">
+      <ExternalLink href="https://github.com/elanalynn">
         <img
           height="32"
           width="32"
           src="https://unpkg.com/simple-icons@latest/icons/github.svg"
+          alt="github"
         />
-      </a>
-      <a href="https://www.linkedin.com/in/elanalynn/" target="_blank">
+      </ExternalLink>
+      <ExternalLink href="https://www.linkedin.com/in/elanalynn/">
         <img
           height="32"
           width="32"
           src="https://unpkg.com/simple-icons@latest/icons/linkedin.svg"
+          alt="linkedin"
         />
-      </a>
-      <a href="https://www.twitter.com/elanalynn/" target="_blank">
+      </ExternalLink>
+      <ExternalLink href="https://www.twitter.com/elanalynn/">
         <img
           height="32"
           width="32"
           src="https://unpkg.com/simple-icons@latest/icons/twitter.svg"
+          alt="twitter"
         />
-      </a>
+      </ExternalLink>
     </div>
     <form
       className="contact"
       name="contact-form-elanalynn"
       method="POST"
-      enctype="multipart/form-data"
+      action="/"
+      encType="multipart/form-data"
       data-netlify="true"
       netlify-honeypot="bot-field"
     >
@@ -53,4 +58,4 @@ const contact = () => (
   </Layout>
 )
 
-export default contact
+export default connect

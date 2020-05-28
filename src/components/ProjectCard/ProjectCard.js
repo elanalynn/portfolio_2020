@@ -11,15 +11,14 @@ export const ProjectCard = ({
   id,
   image,
   title,
-  to,
+  to = "",
 }) => (
   <Link to={to} className={`project-card ${className}`}>
-    <img
-      src={`https://elanalynn-assets.s3-us-west-1.amazonaws.com/happy-dog.jpg`}
-      alt={image}
-    />
+    <img src={image} alt={image} />
     <div id={id} className="text">
+      <h2>{title}</h2>
       {children}
+      <p className="cta">Explore</p>
     </div>
   </Link>
 )

@@ -6,7 +6,7 @@ image: "squirrel"
 imageattr: ""
 title: "Why I Write"
 tags: ["writing", "cnf"]
-blurb: "In mattis lectus sed augue eleifend, quis ultricies odio iaculis. Nulla egestas mauris sollicitudin sapien sagittis mattis. Suspendisse massa turpis, convallis vitae vestibulum posuere, tristique a odio. Suspendisse in sapien in eros mattis hendrerit. Morbi nunc metus, dictum sed lacinia vel, porta et lorem. Aenean cursus sodales tempus. Aliquam a ipsum eget dolor porta posuere."
+blurb: "Suspendisse in sapien in eros mattis hendrerit. Morbi nunc metus, dictum sed lacinia vel, porta et lorem. Aenean cursus sodales tempus. Aliquam a ipsum eget dolor porta posuere."
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales ultricies dui at fringilla. Vestibulum volutpat mollis sollicitudin. Sed semper iaculis ipsum eu venenatis. Curabitur eget sapien at arcu accumsan mollis. Cras vehicula, sem a tincidunt tristique, quam neque tincidunt justo, sed elementum risus ligula venenatis orci. Morbi quis felis vitae urna egestas pulvinar. Praesent bibendum tellus eu purus pulvinar, ut finibus elit hendrerit. Pellentesque sollicitudin, libero luctus pharetra gravida, neque enim placerat risus, et finibus erat velit a massa. Curabitur interdum neque vel felis feugiat, nec pharetra tellus imperdiet.

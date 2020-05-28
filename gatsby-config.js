@@ -6,13 +6,19 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    // `gatsby-plugin-layout`,
-    // {
-    //   resolve: `gatsby-plugin-routes`,
-    //   options: {
-    //     path: `${__dirname}/src/routes.js`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        respectDNT: true,
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Defers execution of google analytics script after page load
+        defer: false,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -4,7 +4,7 @@ import React from "react"
 import { ArtCard } from "../components/ArtCard/ArtCard"
 import { Layout } from "../components/Layout/Layout"
 
-const art = () => {
+const art = ({ path }) => {
   const query = graphql`
     query {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
@@ -68,9 +68,9 @@ const art = () => {
             )
           })
         return (
-          <Layout pageTitle="Art">
+          <Layout pageTitle="Art" path={path}>
             <h1>Art</h1>
-            <p className="pageInfo">Illustrations and the likes</p>
+            <p className="pageInfo">Illustrations and the likes.</p>
             <section className="post-index">{Posts.reverse()}</section>
           </Layout>
         )

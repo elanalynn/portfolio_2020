@@ -4,7 +4,7 @@ import React from "react"
 import { PostCard } from "../components/PostCard/PostCard"
 import { Layout } from "../components/Layout/Layout"
 
-const writing = () => {
+const writing = ({ path }) => {
   const query = graphql`
     query {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
@@ -70,7 +70,7 @@ const writing = () => {
             )
           })
         return (
-          <Layout pageTitle="Writing">
+          <Layout pageTitle="Writing" path={path}>
             <h1>Writing</h1>
             <p className="pageInfo">
               Fiction, creative nonfiction (CNF), and a little bit of personal

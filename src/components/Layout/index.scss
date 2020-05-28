@@ -20,7 +20,7 @@ p {
 
 .background-image {
   &.cow-background {
-    background: url("../../assets/cow.png") no-repeat;
+    background: url("../../assets/cow_full.jpg") no-repeat;
     -webkit-background-size: 100% cover;
     -moz-background-size: 100% cover;
     -o-background-size: 100% cover;
@@ -59,8 +59,15 @@ a {
   text-decoration: none;
   color: #222;
 
-  &:hover {
-    background-color: rgb(255, 156, 62);
+  &:hover,
+  &:focus {
+    background-color: $primary;
+    color: $light;
+  }
+
+  &.active {
+    background-color: $secondary;
+    color: $light;
   }
 }
 

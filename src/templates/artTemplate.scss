@@ -1,9 +1,15 @@
 .art-detail {
   display: flex;
-  margin-top: 6rem;
+  margin-top: 4rem;
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    margin-top: 0;
+  }
 
   .art-data {
-    width: 22rem;
+    width: 100%;
+    max-width: 22rem;
     margin-right: 4rem;
   }
 
@@ -20,5 +26,10 @@
   img {
     width: auto;
     max-height: 36rem;
+    margin-top: 1rem;
+
+    @media screen and (max-width: 640px) {
+      width: 100%;
+    }
   }
 }

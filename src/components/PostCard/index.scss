@@ -1,3 +1,6 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
 @keyframes show {
   0% {
     opacity: 0;
@@ -9,18 +12,21 @@
 
 .post-card {
   padding: 0;
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 
   .parent {
-    max-width: 39rem;
+    max-width: 39.5rem;
     width: 100%;
-    height: 20rem;
     overflow: hidden;
     position: relative;
+
+    @media screen and (min-width: 1440px) {
+      max-width: 44rem;
+    }
   }
 
   .child {
-    height: auto;
+    height: 100%;
     width: 100%;
     box-shadow: inset 0px 0px 40px 20px rgba(0, 0, 0, 0.5);
     -webkit-transition: all 0.5s;
@@ -36,27 +42,26 @@
     opacity: 0;
 
     .tag {
-      background: white;
+      @include overlay;
       padding: 0.125rem 0.25rem;
       margin: 0.25rem;
     }
   }
 
   .text {
-    background: white;
+    @include overlay;
     font-size: 1.25rem;
     display: inline-block;
     padding: 0.25rem 0.75rem;
     text-decoration: none !important;
-    color: darkslategray;
     position: absolute;
     top: 20px;
     left: 0;
   }
 
   .blurb {
+    @include overlay;
     font-size: 1rem;
-    background: white;
     opacity: 0;
     width: 30rem;
     padding: 1rem;
@@ -64,6 +69,18 @@
     position: absolute;
     bottom: 20px;
     right: 65px;
+
+    @media screen and (max-width: 640px) {
+      width: 20rem;
+    }
+  }
+
+  .tags,
+  .blurb {
+    @media screen and (max-width: 640px) {
+      animation: show 0.5s;
+      animation-fill-mode: forwards;
+    }
   }
 
   .parent:hover .child,

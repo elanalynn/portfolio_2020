@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 @keyframes show {
   0% {
     opacity: 0;
@@ -16,13 +18,36 @@
   border: 1px solid gray;
   display: flex;
 
+  &:hover,
+  &:focus {
+    .cta {
+      border-bottom: 2px solid $accent;
+    }
+  }
+
   img {
     width: auto;
-    height: 100%;
+    max-width: 15rem;
+    height: auto;
   }
 
   .text {
     font-size: 1.25rem;
-    padding: 0.25rem 0.75rem;
+    margin: 1rem;
+    position: relative;
+
+    h2,
+    p {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+
+    .cta {
+      text-align: center;
+      width: auto;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
   }
 }

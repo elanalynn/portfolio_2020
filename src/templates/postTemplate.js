@@ -5,7 +5,7 @@ import { Layout } from "../components/Layout/Layout"
 
 import "./postTemplate.scss"
 
-export default function PostTemplate({ data }) {
+export default function PostTemplate({ data, path }) {
   const { markdownRemark } = data
   const {
     frontmatter: { title, date, tags },
@@ -13,7 +13,7 @@ export default function PostTemplate({ data }) {
   } = markdownRemark
 
   return (
-    <Layout pageTitle={title}>
+    <Layout pageTitle={title} path={path}>
       <header className="post-header">
         <section className="tag-section">
           {tags.map(tag => (
