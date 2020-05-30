@@ -1,36 +1,33 @@
 @import "../../styles/variables";
 
-.mobile nav {
-  position: fixed;
-  top: 80px;
-  right: -400px;
-  font-size: 3rem;
-  z-index: 1;
-  background-color: $accent;
-  height: 100%;
-  width: 100%;
+.mobile {
+  nav {
+    position: fixed;
+    top: 80px;
+    right: -400px;
+    font-size: 3rem;
+    z-index: 1;
+    background-color: $accent;
+    height: 100%;
+    width: 100%;
 
-  .burger {
-    background-color: none !important;
-    border-width: 0 !important;
-  }
+    ul {
+      flex-direction: column;
 
-  ul {
-    flex-direction: column;
-
-    li {
-      text-align: right;
-      margin-right: 2rem;
+      li {
+        text-align: right;
+        margin-right: 2rem;
+      }
     }
-  }
 
-  &.open {
-    transform: translateX(-400px);
-    transition: transform 0.5s ease-in-out;
-  }
+    &.open {
+      transform: translateX(-400px);
+      transition: transform 0.5s ease-in-out;
+    }
 
-  &.closed {
-    transform: translateX(400px);
-    transition: transform 0.5s ease-in-out;
+    &.closed {
+      transform: translateX(400px);
+      transition: transform 0.5s ease-in-out;
+    }
   }
 }
