@@ -8,7 +8,7 @@ export const MobileMenu = ({ path }) => {
   const [open, setOpen] = useState(false)
   return (
     <div className="mobile">
-      <button onClick={() => setOpen(!open)}>
+      <button className="burger" onClick={() => setOpen(!open)}>
         <Burger />
       </button>
       <Navigation navClass={open ? "open" : "closed"} path={path} />

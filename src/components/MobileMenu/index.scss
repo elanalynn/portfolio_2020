@@ -10,6 +10,11 @@
   height: 100%;
   width: 100%;
 
+  .burger {
+    background-color: none !important;
+    border-width: 0 !important;
+  }
+
   ul {
     flex-direction: column;
 

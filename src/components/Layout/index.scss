@@ -25,16 +25,20 @@ p {
     -moz-background-size: 100% cover;
     -o-background-size: 100% cover;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
   }
 
   &.pigeon-background {
-    background: url("../../assets/pigeon.png") no-repeat;
-    -webkit-background-size: 100% cover;
-    -moz-background-size: 100% cover;
-    -o-background-size: 100% cover;
-    background-size: cover;
-    height: 100vh;
+    background-color: $light;
+
+    @media screen and (min-width: 640px) {
+      background: url("../../assets/pigeon.png") no-repeat;
+      -webkit-background-size: 100% cover;
+      -moz-background-size: 100% cover;
+      -o-background-size: 100% cover;
+      background-size: cover;
+      height: 100vh;
+    }
   }
 }
 

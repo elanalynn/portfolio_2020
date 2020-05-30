@@ -9,7 +9,7 @@ import "./index.scss"
 export const Layout = ({ children, pageTitle, path }) => {
   const className = pageTitle => {
     if (["Home"].includes(pageTitle)) return "cow-background"
-    if (["Contact"].includes(pageTitle)) return "pigeon-background"
+    if (["Connect"].includes(pageTitle)) return "pigeon-background"
   }
 
   return (
