@@ -2,6 +2,7 @@ import { graphql, StaticQuery } from "gatsby"
 import React from "react"
 
 import { ArtCard } from "../components/ArtCard/ArtCard"
+import { ExternalLink } from "../components/ExternalLink/ExternalLink"
 import { Layout } from "../components/Layout/Layout"
 
 const art = ({ path }) => {
@@ -70,7 +71,13 @@ const art = ({ path }) => {
         return (
           <Layout pageTitle="Art" path={path}>
             <h1>Art</h1>
-            <p className="pageInfo">Illustrations and the likes.</p>
+            <p className="pageInfo">
+              Illustrations and the likes. Buy prints
+              <ExternalLink href="https://kopelevich.co/collections/elanas-art">
+                here
+              </ExternalLink>
+              .
+            </p>
             <section className="post-index">{Posts.reverse()}</section>
           </Layout>
         )

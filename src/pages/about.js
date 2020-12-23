@@ -7,22 +7,27 @@ const about = ({ path }) => (
   <Layout pageTitle="About" path={path}>
     <h1>About</h1>
     <p>
-      I am a number of things: software engineer, writer, vegan, reader, artist,
-      gardener, bike rider, hiker, list maker, person... I am currently taking a
-      break from working in tech and focusing on all kinds of writing, various
-      projects involving self reflection and animal advocacy, and the general
-      enjoyment of life. I recognize how lucky I am to be able to do this. I
-      made this site to share my ideas and work. If you are looking for a more
-      professional story, connect with me on
+      I am a software developer (currently working at Shopify). I write (essays
+      and stories, and maybe one day a book). I am vegan and I care very much
+      about reducing suffering in the world. I read a lot. It's great. It turns
+      out that there is some interesting stuff in books! I make art and I sell
+      it at
+      <ExternalLink href="https://www.kopelevich.co">
+        kopelevich.co
+      </ExternalLink>
+      (a Shopify store that I share with my mom, who is very a talented artist).
+      I also like gardening, riding my bike, hiking, practicing yoga and
+      meditiation, organizing and procrastinating, and rebuilding my personal
+      site every six months. For a more formal explanation of my professional
+      experience check out this nifty site:
       <ExternalLink href="https://www.linkedin.com/in/elanalynn/">
         LinkedIn
       </ExternalLink>
-      , and if you would like to see what I care enough about to tweet, well,
-      you know how
-      <ExternalLink href="https://www.twitter.com/elanalynn/">
-        this
+      . Find some code stuff here:
+      <ExternalLink href="https://www.github.com/elanalynn/">
+        Github
       </ExternalLink>
-      works.
+      .
     </p>
   </Layout>
 )

@@ -13,21 +13,21 @@ export const Navigation = ({ navClass, path }) => {
             About
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/writing" className={isActive("writing")}>
             Writing
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/art" className={isActive("art")}>
             Art
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/code" className={isActive("code")}>
             Code
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/connect" className={isActive("connect")}>
             Connect
