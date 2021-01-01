@@ -23,14 +23,6 @@ const connect = ({ path }) => (
           alt="linkedin"
         />
       </ExternalLink>
-      <ExternalLink href="https://www.twitter.com/elanalynn/">
-        <img
-          height="32"
-          width="32"
-          src="https://unpkg.com/simple-icons@latest/icons/twitter.svg"
-          alt="twitter"
-        />
-      </ExternalLink>
     </div>
     <form
       className="contact"
