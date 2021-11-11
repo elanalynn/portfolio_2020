@@ -73,9 +73,7 @@ const art = ({ path }) => {
             <h1>Art</h1>
             <p className="pageInfo">
               Illustrations and the likes. Buy prints
-              <ExternalLink href="https://kopelevich.co/collections/elanas-art">
-                here
-              </ExternalLink>
+              <ExternalLink href="https://veryuniqueart.com">here</ExternalLink>
               .
             </p>
             <section className="post-index">{Posts.reverse()}</section>
