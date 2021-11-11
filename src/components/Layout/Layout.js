@@ -18,19 +18,7 @@ export const Layout = ({ children, pageTitle, path }) => {
         <SEO title={pageTitle} />
         <Header path={path} />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}
-          {["Home"].includes(pageTitle) ? (
-            <span>
-              &nbsp;|
-              <ExternalLink href="https://unsplash.com/photos/tz87qQK9n58">
-                Image by Shane Rounce
-              </ExternalLink>
-            </span>
-          ) : (
-            ""
-          )}
-        </footer>
+        <footer>© {new Date().getFullYear()}</footer>
       </div>
     </div>
   )

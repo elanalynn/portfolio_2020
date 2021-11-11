@@ -21,13 +21,13 @@ p {
 .background-image {
   &.cow-background {
     background-color: #94ddbc;
+    height: 100vh;
     @media screen and (min-width: 640px) {
       background: url("../../assets/cow_full.jpg") no-repeat;
       -webkit-background-size: 100% cover;
       -moz-background-size: 100% cover;
       -o-background-size: 100% cover;
       background-size: cover;
-      height: 100vh;
     }
   }
 
