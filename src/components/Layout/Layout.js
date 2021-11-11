@@ -2,7 +2,6 @@ import React from "react"
 
 import { Header } from "../Header/Header"
 import { SEO } from "../SEO/SEO"
-import { ExternalLink } from "../ExternalLink/ExternalLink"
 
 import "./index.scss"
 
@@ -18,7 +17,6 @@ export const Layout = ({ children, pageTitle, path }) => {
         <SEO title={pageTitle} />
         <Header path={path} />
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()}</footer>
       </div>
     </div>
   )
