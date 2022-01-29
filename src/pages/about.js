@@ -8,11 +8,11 @@ const about = ({ path }) => (
     <h1>About</h1>
     <p>
       👋 I am a web developer (currently at Shopify). In my free time, I love to
-      read, write, and make art. Check out my shop,
+      read, write, and paint. Check out my shop,
       <ExternalLink href="https://www.veryuniqueart.com">
         veryuniqueart.com
       </ExternalLink>
-      . I also like gardening, riding bikes, hiking, yoga, and meditiation. I am
+      . I also like gardening, riding bikes, playing games, hiking, and yoga. I am
       vegan and I care very much about reducing suffering in the world. For a
       more formal explanation of my professional experience check out
       <ExternalLink href="https://www.linkedin.com/in/elanalynn/">
@@ -24,6 +24,8 @@ const about = ({ path }) => (
       </ExternalLink>
       .
     </p>
+
+    <p>The amazing cow photo on the index page is by <ExternalLink href="https://www.instagram.com/shanerounce/">Shane Rounce</ExternalLink></p>
   </Layout>
 )
 
