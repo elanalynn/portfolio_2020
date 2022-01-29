@@ -25,7 +25,7 @@ const about = ({ path }) => (
       .
     </p>
 
-    <p>The amazing cow photo on the index page is by <ExternalLink href="https://www.instagram.com/shanerounce/">Shane Rounce</ExternalLink></p>
+    <p>The amazing cow photo on the index page is by <ExternalLink href="https://www.instagram.com/shanerounce/">Shane Rounce</ExternalLink>.</p>
   </Layout>
 )
 
